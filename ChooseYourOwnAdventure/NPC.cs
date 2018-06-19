@@ -25,5 +25,14 @@ namespace ChooseYourOwnAdventure
         {
             Console.WriteLine(name + ": " + message);
         }
+        public void SpawnAlert()
+        {
+            string aggression = "not aggressive";
+            if (aggro)
+            {
+                aggression = "aggressive";
+            }
+            Console.WriteLine("Hold up! " + name + " has appeared! " + name + " is " + aggression + " and has a healthbar of " + health + "hp.");
+        }
     }
 }
